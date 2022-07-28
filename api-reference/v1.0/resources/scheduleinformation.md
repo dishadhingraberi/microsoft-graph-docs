@@ -16,7 +16,7 @@ Represents the availability of a user, distribution list, or resource (room or e
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|availabilityView |String |Represents a merged view of availability of all the items in `scheduleItems`. The view consists of time slots. Availability during each time slot is indicated with: `0`= free, `1`= tentative, `2`= busy, `3`= out of office, `4`= working elsewhere.|
+|availabilityView |String |Represents a merged view of availability of all the items in `scheduleItems`. The view consists of time slots. Availability during each time slot is indicated with: `0`= unknown, `1`= free or working elsewhere, `2`= tentative, `3`= busy, `4`= oof.|
 |error |[freeBusyError](freebusyerror.md) |Error information from attempting to get the availability of the user, distribution list, or resource. |
 |scheduleId |String |An SMTP address of the user, distribution list, or resource, identifying an instance of **scheduleInformation**. |
 |scheduleItems |[scheduleItem](scheduleitem.md) collection |Contains the items that describe the availability of the user or resource. |
